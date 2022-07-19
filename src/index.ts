@@ -5,10 +5,12 @@ import {
   buildPoseidonReference,
 } from 'circomlibjs';
 import { createPoseidonHash } from './poseidon';
+import { encodeStringToBigInt } from './utils';
 
 export {
-  createPoseidonHash,
   buildPoseidon,
   buildPoseidonOpt,
   buildPoseidonReference,
+  createPoseidonHash,
+  encodeStringToBigInt,
 };
