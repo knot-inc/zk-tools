@@ -10,12 +10,13 @@
   "author": "tomo",
   "license": "MIT",
   "devDependencies": {
-    "@tsconfig/node14": "^1.0.1",
+    "@tsconfig/node16": "^1.0.3",
     "@types/eslint": "^7.2.4",
     "@types/eslint-plugin-prettier": "^3.1.0",
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "dts-gen": "^0.6.0",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -26,7 +27,10 @@
     "ts-node": "^10.0.0",
     "typescript": "^4.5.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "circomlibjs": "0.1.2",
+    "snarkjs": "^0.4.22"
+  },
   "jest": {
     "moduleFileExtensions": [
       "js",

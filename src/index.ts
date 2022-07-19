@@ -1,11 +1,14 @@
-async function main(): Promise<void> {
-  await new Promise(resolve => resolve(true));
-}
+// @ts-ignore
+import {
+  buildPoseidon,
+  buildPoseidonOpt,
+  buildPoseidonReference,
+} from 'circomlibjs';
+import { createPoseidonHash } from './poseidon';
 
-main().then(
-  () => process.exit(),
-  err => {
-    console.error(err);
-    process.exit(-1);
-  },
-);
+export {
+  createPoseidonHash,
+  buildPoseidon,
+  buildPoseidonOpt,
+  buildPoseidonReference,
+};
