@@ -6,13 +6,16 @@
     }
   },
   "compilerOptions": {
-    "noImplicitAny": false,
+    "allowJs": true,
     "declaration": true,
     "moduleResolution": "node",
-    "module": "es2020",
-    "target": "es2020",
+    "module": "CommonJS",
+    "noImplicitAny": false,
+    "outDir": "./lib",
+    "skipLibCheck": true,
+    "target": "es6",
     "typeRoots": ["node_modules/@types", "src/types"]
   },
-  "include": ["src/**/*", "scripts/**/*"],
-  "exclude": ["node_modules", "src/test", "dist"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "src/test", "lib"]
 }
