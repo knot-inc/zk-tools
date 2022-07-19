@@ -1,5 +1,3 @@
-import { buf2Bigint } from './buf2Bigint';
-
 /**
  * Creates a Poseidon big number hash.
  * @param values The list of values to hash.
@@ -10,5 +8,5 @@ export const createPoseidonHash = (
   values: string[] | number[] | bigint[],
 ) => {
   const bigintvalues = (values as any[]).map(v => BigInt(v));
-  return buf2Bigint(poseidonModule(bigintvalues)).toString();
+  return poseidonModule.F.toString(poseidonModule(bigintvalues));
 };
