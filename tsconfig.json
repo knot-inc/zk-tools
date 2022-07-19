@@ -9,8 +9,10 @@
     "noImplicitAny": false,
     "declaration": true,
     "moduleResolution": "node",
-    "module": "es2020"
+    "module": "es2020",
+    "target": "es2020",
+    "typeRoots": ["node_modules/@types", "src/types"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "scripts/**/*"],
   "exclude": ["node_modules", "src/test", "dist"]
 }
