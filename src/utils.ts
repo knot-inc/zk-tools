@@ -2,7 +2,7 @@
 /**
  * Returns the string as an ascii encoded BigInt.
  */
-export const encodeStringToBigInt = (str: string): BigInt => {
+export const encodeStringToBigInt = (str: string): bigint => {
   let codeArr: string[] = [];
   let numChars = str.length > 31 ? 31 : str.length;
   for (let i = 0; i < numChars; i++) {
