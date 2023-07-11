@@ -1,12 +1,12 @@
-export declare type BigNumberish = string | bigint;
-export declare type Proof = {
+export type BigNumberish = string | bigint;
+export type Proof = {
     pi_a: BigNumberish[];
     pi_b: BigNumberish[][];
     pi_c: BigNumberish[];
     protocol: string;
     curve: string;
 };
-export declare type SolidityProof = [
+export type SolidityProof = [
     BigNumberish,
     BigNumberish,
     BigNumberish,
@@ -16,12 +16,12 @@ export declare type SolidityProof = [
     BigNumberish,
     BigNumberish
 ];
-export declare type PublicSignals = BigNumberish[];
-export declare type FullProof = {
+export type PublicSignals = BigNumberish[];
+export type FullProof = {
     proof: Proof;
     publicSignals: PublicSignals;
 };
-export declare type Witness = {
+export type Witness = {
     values: string[];
     nonces: string[];
     commits: string[];
