@@ -19,3 +19,12 @@ lerna-debug.log*
 *.pdb
 
 .DS_Store
+
+# disable zero-install
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
